@@ -1,18 +1,19 @@
-let numero = 1;
-limite = 50;
+// Desafío FizzBuzz
 
-while (numero <= limite){
-    if (numero % 5 == 0 & numero % 3 == 0){
-        console.log("FIZZBUZZ");
-            numero = numero + 1;
-    }else if (numero % 5 == 0){
-        console.log("BUZZ");
-            numero = numero + 1;
-    }else if (numero % 3 == 0){
-        console.log("FIZZ");
-            numero = numero + 1;
-    }else{
-        console.log(numero);
-        numero = numero +1;
+// Este programa debe imprimir los números del 1 al 1000
+// - Si es divisible por 3, imprime "Fizz"
+// - Si es divisible por 5, imprime "Buzz"
+// - Si es divisible por ambos, imprime "Fizzbuzz" (con "b" minúscula)
+// - Si no, imprime el número
+
+for (let i = 1; i <= 1000; i++) {
+        if (i % 5 == 0 & i % 3 == 0){
+        console.log("Fizzbuzz");
+        }else if (i % 5 == 0){
+        console.log("Buzz");
+           }else if (i % 3 == 0){
+        console.log("Fizz");
+       }else{
+        console.log(i);
     }
 }
